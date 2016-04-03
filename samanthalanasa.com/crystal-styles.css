@@ -1,0 +1,75 @@
+html {
+    background:rgb(79,143,249) no-repeat center center fixed; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(147,0,233,1) 1%, rgba(44,0,85,1) 60%, rgba(18,0,42,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,rgba(94,0,148,1)), color-stop(66%,rgba(44,0,85,1)), color-stop(100%,rgba(18,0,42,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(164,197,252,1) 1%,rgba(79,143,249,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(147,0,233,1) 1%, rgba(44,0,85,1) 60%, rgba(18,0,42,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(147,0,233,1) 1%, rgba(44,0,85,1) 60%, rgba(18,0,42,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(147,0,233,1) 1%, rgba(44,0,85,1) 60%, rgba(18,0,42,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4c5fc', endColorstr='#4f8ff9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    min-height: 100%;
+}
+
+.question{
+	color:white;
+	font-family:'Roboto', sans-serif;
+	font-weight:100;
+	font-size:50px;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20%;
+	text-align:center;
+}
+
+body{
+	color:white;
+	font-family:'Roboto', sans-serif;
+	font-weight:100;
+	font-size:36px; 	
+}
+
+.note{
+	color:white;
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:16px;
+}
+
+#answer{
+	width:500px;
+	height:30px;
+	border:0px;
+	color:white;
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:16px;
+	padding:5px;
+	background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+	background: rgba(255, 255, 255, .4);
+}
+
+p{
+	line-height:40px;
+	margin:5px;
+}
+
+.fixedwidth{
+	width:1000px;
+	margin:0 auto;
+}
+
+#myButton{
+	padding:10px;
+	border:0px solid white;
+	background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+	background: rgba(255, 255, 255, .4);
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:15px;
+	width:100px;
+	color:white;
+}
+
+
+

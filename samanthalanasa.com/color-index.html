@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Guessing Game</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="color-styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		
+</head>
+
+<body>
+	
+	<div class="question"><p>What is my favorite color?</p>
+	<input id="answer" />
+	
+	<button id="myButton">Guess</button>
+	
+</div>
+	
+	<script type="text/javascript">
+	
+		document.getElementById("myButton").onclick=function(){
+			
+			var colors = ["blue", "red", "green", "orange", "yellow", "purple", "pink"];
+			var answer = document.getElementById("answer").value;
+			var x = Math.floor(Math.random()*colors.length)
+
+				   
+				   
+			var randomColor = colors[x];
+			
+			if (randomColor==document.getElementById("answer").value) {
+				
+				alert("You're right!");
+				
+			} else {
+				
+				alert("That's wrong! The color was " + randomColor);
+				
+			}
+			
+		}
+		
+
+	</script>
+
+</body>
+</html>
