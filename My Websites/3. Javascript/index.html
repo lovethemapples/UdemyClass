@@ -7,28 +7,81 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
 
 </head>
 
 <body>
 
-	<p id="arrayString"></p>
-	
+	<div class="container">
 
-	<script type="text/javascript">
-	
-	var arrayString=" ";
-	
-	var myArray=["pizza", "chocolate", "crisps"];
-	
-	for (var i=0; i<myArray.length; i++) {
-		
-		arrayString=arrayString+myArray[i]+ ", ";
-	}
-	
-	document.getElementById("arrayString").innerHTML=arrayString;
-	
-	</script>
+		<div class="centered">	
+
+			<span class="timeText"> Time: </span><span id="time"></span>
+
+			<div id="showBox">I will eat you.</div>
+
+			<script type="text/javascript">
+
+			function getRandomColor() {
+			    var letters = '0123456789ABCDEF'.split('');
+			    var color = '#';
+			    for (var i = 0; i < 6; i++ ) {
+			        color += letters[Math.floor(Math.random() * 16)];
+			    }
+				return color;
+			}
+
+			var clickedTime; var createdTime; var reactionTime;
+
+			function makeBox() {
+
+					var random = Math.floor((Math.random() * 5000) + 1);
+
+					setTimeout(function() {
+
+						if (Math.random()>0.5) {
+
+							document.getElementById("showBox").style.borderRadius="100px";
+
+						} else {
+							
+							document.getElementById("showBox").style.borderRadius="0px";
+
+						}
+
+						document.getElementById("showBox").style.display="block";
+
+						document.getElementById("showBox").style.backgroundColor=getRandomColor();
+
+						createdTime=Date.now();
+
+					}, random);
+			}
+
+			
+			document.getElementById("showBox").onclick=function()  {
+
+				clickedTime=Date.now();
+
+				reactionTime=(clickedTime-createdTime)/1000;
+
+				document.getElementById("time").innerHTML=reactionTime;
+			   
+			  	this.style.display="none";
+
+			 	makeBox();
+
+			}
+
+			makeBox();
+			
+			</script>
+
+		</div>
+
 
 </body>
 </html>

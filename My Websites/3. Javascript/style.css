@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+    padding: 0;
+    text-align: center; /* !!! */
+}
+
+.centered {
+    margin: auto;
+ 	position: absolute;
+ 	top: 0; 
+ 	left: 0; 
+ 	bottom: 0; 
+ 	right: 0;
+ 	height: 500px;
+ 	width: 500px;
+}
+
+#showBox {
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	background: getRandomColor();
+	display: none;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+#time {
+	font-family: Helvetica, Arial;
+	font-size: 60px;
+}
+
+.timeText {
+	font-family: Helvetica, Arial;
+	font-size: 60px;
+}
