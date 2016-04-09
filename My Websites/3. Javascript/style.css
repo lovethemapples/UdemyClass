@@ -2,6 +2,7 @@ body {
 	margin: 0;
     padding: 0;
     text-align: center; /* !!! */
+    font-family: Helvetica, Arial;
 }
 
 .centered {
@@ -20,12 +21,13 @@ body {
 	height: 100px;
 	padding: 5px;
 	text-align: center;
-	font-family: Helvetica, Arial;
-	background: getRandomColor();
+	background: rgb(0, 230, 172);
 	display: none;
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 25px;
+	position:relative
+	;
 }
 
 #time {
@@ -36,4 +38,8 @@ body {
 .timeText {
 	font-family: Helvetica, Arial;
 	font-size: 60px;
+}
+
+p {
+	font-size: 16px;
 }

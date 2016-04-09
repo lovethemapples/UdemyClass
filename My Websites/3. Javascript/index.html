@@ -19,9 +19,11 @@
 
 		<div class="centered">	
 
-			<span class="timeText"> Time: </span><span id="time"></span>
+			<p>Please click the box as it appears to see your reaction time.</p>
 
-			<div id="showBox">I will eat you.</div>
+			<span class="timeText"> Time: <span id="time">0</span>s</span>
+
+			<div id="showBox">he he he</div>
 
 			<script type="text/javascript">
 
@@ -51,6 +53,19 @@
 							document.getElementById("showBox").style.borderRadius="0px";
 
 						}
+
+						var top=Math.random();
+
+						top=top*300;
+
+						var left=Math.random();
+
+						left=left*500;
+
+
+						document.getElementById("showBox").style.top=top+"px";
+
+						document.getElementById("showBox").style.left=left+"px";
 
 						document.getElementById("showBox").style.display="block";
 
