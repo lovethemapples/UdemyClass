@@ -9,3 +9,24 @@
   padding: 5px;
 
 }
+
+.large {
+  font-size: 3000%;
+  color: rgb(6, 238, 187);
+}
+
+#div1{
+  background-color: blue;
+}
+
+#div2{
+  background-color: red;
+}
+
+#div3{
+  background-color: green;
+}
+
+.contentDiv{
+  height:800px;
+}
